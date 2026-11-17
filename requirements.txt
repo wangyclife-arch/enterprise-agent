@@ -1,0 +1,37 @@
+# 运行时依赖（版本与本项目实测环境一致，Python 3.10+）
+# 安装：pip install -r requirements.txt
+
+# ---- Web / API ----
+fastapi==0.162.2
+uvicorn==0.54.0
+sse-starlette==3.7.0
+python-multipart==0.0.33
+
+# ---- Agent / LLM ----
+langchain==1.4.9
+langchain-core==1.7.6
+langchain-community==0.4.2
+langchain-openai==1.7.4
+langchain-text-splitters==1.1.3
+langgraph==1.2.20
+langgraph-checkpoint==4.3.1
+langgraph-checkpoint-postgres==3.2.0
+
+# ---- 数据库 / 向量 ----
+SQLAlchemy==2.1.8
+psycopg[binary]==3.3.8
+psycopg-pool==3.3.3
+pgvector==0.5.1
+
+# ---- 检索（混合召回 + RRF）----
+jieba==0.42.1
+rank-bm25==0.2.2
+
+# ---- 鉴权 ----
+python-jose==3.5.0
+bcrypt==5.0.0
+
+# ---- 基础设施 ----
+python-dotenv==1.2.4
+loguru==0.7.3
+httpx==0.28.1
